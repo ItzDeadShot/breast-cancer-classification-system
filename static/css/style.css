@@ -1,0 +1,225 @@
+/*just bg and body style*/
+.container-upload {
+  background-color: #1e2832;
+  padding-bottom: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.center {
+  text-align: center;
+}
+#top {
+  margin-top: 20px;
+}
+.btn-container {
+  background: #fff;
+  border-radius: 5px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.white {
+  color: white;
+}
+.imgupload {
+  color: #1e2832;
+  padding-top: 40px;
+  font-size: 7em;
+}
+#namefile {
+  color: black;
+}
+h4 > strong {
+  color: #ff3f3f;
+}
+.btn-primary {
+  border-color: #ff3f3f !important;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #ff3f3f !important;
+  border-color: #ff3f3f !important;
+}
+
+/*these two are set to not display at start*/
+.imgupload.ok {
+  display: none;
+  color: green;
+}
+.imgupload.stop {
+  display: none;
+  color: red;
+}
+
+/*this sets the actual file input to overlay our button*/
+#fileup {
+  opacity: 0;
+  -moz-opacity: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  width: 200px;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  height: 50px;
+}
+
+/*switch between input and not active input*/
+#submitbtn {
+  padding: 5px 50px;
+  display: none;
+}
+#fakebtn {
+  padding: 5px 40px;
+}
+
+/*www.emilianocostanzo.com*/
+#sign {
+  color: #1e2832;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  text-shadow: 0px 0px 0px #1e2832;
+  transition: all.3s;
+}
+#sign:hover {
+  color: #1e2832;
+  text-shadow: 0px 0px 5px #1e2832;
+}
+
+.upimage {
+  max-height: 300px;
+  max-width: 300px !important;
+  height: auto;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prediction {
+  color: #ffffff;
+  margin-top: 16px !important;
+  font-size: 1em;
+  text-align: center;
+}
+
+.capture_prediction {
+  color: #ffffff;
+  margin-top: 16px !important;
+  font-size: 1em;
+  text-align: center;
+}
+
+#capture_result {
+  display: none;
+}
+
+body {
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+
+.wrapper .left,
+.wrapper .right {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.wrapper .image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.25s ease all;
+}
+
+
+.upload {
+  background: url('../images/upload.jpg');
+}
+
+.capture {
+  background: url('../images/about.jpg');
+}
+
+
+
+.wrapper .caption {
+  position: relative;
+  z-index: 10;
+  color: #fff;
+  text-align: center;
+}
+
+
+.wrapper .caption h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  margin-bottom:1em;
+}
+
+
+.wrapper .caption .button {
+  background: #000;
+  color: #fff;
+  padding: 1em 2em;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: 0.25s ease all;
+}
+
+
+.wrapper .caption .button:hover {
+  background: #ffd346;
+  color: #000;
+}
+
+
+.wrapper .side::before {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6979166666666667) 0%, rgba(0, 0, 0, 0.2721463585434174) 100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  content: '';
+  display: block;
+}
+
+
+.wrapper .left:hover .image,
+.wrapper .right:hover .image {
+  transform: scale(1.2);
+}
+
+@media screen and (min-width:1200px) {
+
+  .wrapper {
+        display: flex;
+  }
+
+
+  .wrapper .left,
+  .wrapper .right {
+        width: 50%;
+        height: 100vh;
+  }
+
+}
